@@ -1,0 +1,17 @@
+.board {
+  border: 12px solid black;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+.square.black {
+  background: black;
+  color: #fff;
+}
+.square {
+  font-size: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: green; */
+}
