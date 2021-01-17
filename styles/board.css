@@ -1,8 +1,16 @@
+.wrapper {
+  perspective: 1000px;
+}
 .board {
   border: 12px solid black;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
+  transition: 400ms transform ease-in-out;
+}
+
+.board:hover {
+  transform: rotateX(10deg);
 }
 .square.black {
   background: black;
